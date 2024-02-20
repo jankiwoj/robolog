@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel", "build"]
+requires = ["setuptools>=49", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -14,7 +14,3 @@ authors = [
 dependencies = [
   "colorlog"
 ]
-
-
-# [project.scripts]
-# robo = "roboforge.scripts.parser:argument_parser"
