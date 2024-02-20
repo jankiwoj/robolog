@@ -65,9 +65,7 @@ def get(
         _create_directory(file_dir)
         file_name = _get_file_name(file_name, stamp_fmt, file_ext)
         file_formatter = _get_file_formatter(file_fmt)
-        file_handler = _get_file_handler(
-            file_dir, file_name, file_lvl, file_formatter
-        )
+        file_handler = _get_file_handler(file_dir, file_name, file_lvl, file_formatter)
         logger.addHandler(file_handler)
 
     if use_stdo:
@@ -154,19 +152,18 @@ def _get_stdo_handler(level, stdo_formatter):
 if __name__ == "__main__":
 
     CONFIG = {
-        'logger_name': 'dupal',
-        'colors': {
-            "INFO": 'blue',
-            "WARNING": 'green',
-            "ERROR": 'purple'
-        },
-        'use_compact': False,
-        'use_colors': True,
-        'file_name' : None,
-        'file_ext': 'txt',
-        'stdo_fmt': None  #     "[{levelname:^7s}] :: {message:s}"
+        "logger_name": "dupal",
+        "colors": {"INFO": "blue", "WARNING": "green", "ERROR": "purple"},
+        "use_compact": False,
+        "use_colors": True,
+        "file_name": None,
+        "file_ext": "txt",
+        "stdo_fmt": None,  #     "[{levelname:^7s}] :: {message:s}"
+        "stdo_lvl": logging.WARNING,
+        "file_lvl": logging.ERROR,
     }
 
+    log = get(**CONFIG)
     log = get(**CONFIG)
 
     log.debug("TEST DEBUG")
