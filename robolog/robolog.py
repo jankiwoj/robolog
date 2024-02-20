@@ -6,7 +6,7 @@ import logging
 from typing import Dict
 
 
-def get(
+def get_logger(
     logger_name: str = "robolog",
     file_dir: str = "logs",
     stdo_lvl: int = logging.DEBUG,
@@ -163,8 +163,8 @@ if __name__ == "__main__":
         "file_lvl": logging.ERROR,
     }
 
-    log = get(**CONFIG)
-    log = get(**CONFIG)
+    log = get_logger(**CONFIG)
+    log = get_logger(**CONFIG)
 
     log.debug("TEST DEBUG")
     log.info("TEST INFO")
