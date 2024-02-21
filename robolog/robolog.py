@@ -152,19 +152,19 @@ def _get_stdo_handler(level, stdo_formatter):
 if __name__ == "__main__":
 
     CONFIG = {
-        "logger_name": "dupal",
-        "colors": {"INFO": "blue", "WARNING": "green", "ERROR": "purple"},
-        "use_compact": False,
-        "use_colors": True,
-        "file_name": None,
-        "file_ext": "txt",
-        "stdo_fmt": None,  #     "[{levelname:^7s}] :: {message:s}"
-        "stdo_lvl": logging.WARNING,
-        "file_lvl": logging.ERROR,
+        "logger_name": "MY_CUSTOM_NAME",                # custom logger name
+        "colors": {                                     # custom color palette
+            "INFO": "blue",                    
+            "WARNING": "green", 
+            "ERROR": "purple"
+            },
+        "file_ext": "txt",                              # change file extension
+        "stdo_fmt": "[{levelname:^7s}] :: {message:s}", # custom format string
+        "stdo_lvl": logging.WARNING,                    # filter out DEBUG and INFO on screen
+        "file_lvl": logging.ERROR,                      # Show only ERROR in file
     }
 
-    log = get_logger(**CONFIG)
-    log = get_logger(**CONFIG)
+    log = get_logger(**CONFIG)  
 
     log.debug("TEST DEBUG")
     log.info("TEST INFO")
