@@ -36,7 +36,7 @@ log.error("Testing logger. This is level ERROR")
 
 You shuld see all available logs in your console:
 
-![Image Alt Text](img/md01.png)
+![Image Alt Text](robolog/img/md01.png)
 
 Also check if default directory `log` was created. Yhere should be a log file with slightly different (more detailed) format.
 
