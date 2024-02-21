@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "robolog"
-version = "0.2.0"
+version = "0.3.0"
 description = "Personalized logger for RPA solutions"
 authors = ["Wojciech Jankiewicz <jankiwojciech@outlook.com>"]
 license = "MIT"
