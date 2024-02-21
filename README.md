@@ -42,4 +42,4 @@ Also check if default directory `log` was created. Yhere should be a log file wi
 
 ## Logging customization
 
-Comming soon...
+Comming TEST - THIS SHOULD NOT BE MERGED!
