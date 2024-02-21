@@ -36,10 +36,10 @@ log.error("Testing logger. This is level ERROR")
 
 You shuld see all available logs in your console:
 
-![Image Alt Text](img/md01.png)
+![Image Alt Text](robolog/img/md01.png)
 
 Also check if default directory `log` was created. Yhere should be a log file with slightly different (more detailed) format.
 
 ## Logging customization
 
-This section will be updated soon. Until then - use your IDE and play with `get_logger`'s parameters.
+Comming soon...
