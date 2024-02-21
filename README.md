@@ -42,4 +42,4 @@ Also check if default directory `log` was created. Yhere should be a log file wi
 
 ## Logging customization
 
-This section will be updated soon. Until then - use your IDE and play with `get_logger`'s parameters.
+Comming soon...
