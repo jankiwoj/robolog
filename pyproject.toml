@@ -5,6 +5,7 @@ description = "Personalized logger for RPA solutions"
 authors = ["Wojciech Jankiewicz <jankiwojciech@outlook.com>"]
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/roboforge-solutions/robolog"
 
 [tool.poetry.dependencies]
 python = "^3.10"
