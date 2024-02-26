@@ -1,4 +1,7 @@
 # Robolog
+
+![Image Alt Text](robolog/img/_idea_robolog.drawio.png)
+
 These are a set of predefined configurations optimized for RPA usage (but not limited to!). The project aims to predict the most suitable default logging configurations for your needs. This fully capable logger can be created with just a single line of code. It is highly configurable and can seamlessly coexist with other loggers.
 
 If you are familiar with Python's `logging` library, you can leverage this tool to save time on tedious configurations or copying code from one project to another. However, if you've recently embarked on your Python journey, you can employ basic syntax without being encumbered by handlers, formatters, and other components necessary for proper logging setup. Simply follow these instructions to utilize a fully functional logger within minutes.
